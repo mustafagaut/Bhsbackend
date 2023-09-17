@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 
 
 const connectDataBase=( )=>{
-    // console.log(urlString);
     mongoose.connect('mongodb+srv://mustafaabdeali284:mustafa@cluster0.jjhctsx.mongodb.net/bhs?retryWrites=true&w=majority', {
         useUnifiedTopology: true,
         useNewUrlParser: true,
