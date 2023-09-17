@@ -24,13 +24,17 @@ const addStudent = async(req,res,next)=>{
 
 const getAllstudent= async(req,res,next)=>{
     try{
-        req.body.image="";
         let students= await Students.find().select('name surname class roll_no class section');
         console.log(students);
         if(students){
             res.status(200).json({
                 success:true,
                 students
+            })
+        }else{
+            res.status(200).json({
+                success:false,
+                message:"error occured"
             })
         }
     }catch(err){
