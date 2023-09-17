@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const urlString = process.env.DB_URL;
+const urlString = "mongodb+srv://mustafaabdeali284:mustafa@cluster0.jjhctsx.mongodb.net/bhs?retryWrites=true&w=majority";
 
 const connectDataBase=( )=>{
     console.log(process.env.DB_URL);
